@@ -1,0 +1,481 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.search {
+    height: 30px;
+    width: 25px;
+    margin-left: 10px;
+
+}
+
+.bar_three {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.v {
+    height: 20px;
+    width: 20px;
+    color: orange;
+
+}
+
+.list_item {
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 5px;
+    color: #6B6B76;
+    padding-right: 10px;
+
+}
+
+.round-bg {
+    background-color: green;
+    /* Set your desired background color */
+    border-radius: 50%;
+    /* Makes the background round */
+}
+
+.list_item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 5px;
+    color: #6B6B76;
+    padding-right: 10px;
+
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.sdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.first_container {
+    width: 50vw;
+}
+
+.paraa {
+    color: #8482D0;
+    font-size: 30px;
+    padding-top: 30px;
+    font-family: 'roboto';
+    padding-left: 0px;
+    text-align: start;
+}
+
+.input_element {
+    border-radius: 10px;
+    width: 80px;
+    background-color: #F3F0D3;
+    border-width: 2px;
+}
+
+.main_container {
+
+    padding: 60px;
+    background-color: #D4D9BD;
+}
+
+.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head_creating {
+    font-family: Roboto;
+    font-size: 60PX;
+    width: 750px;
+    color: #50565C;
+    padding-top: 50px;
+}
+
+.para1 {
+    font-size: 33px;
+    padding-top: 30px;
+    width: 600px;
+    font-family: 'Roboto';
+    color: #7B7EDC;
+}
+
+.container2 {
+    padding: 60px;
+    background-color: #E3E0BB;
+
+
+}
+
+.para2 {
+    color: #0C1F89;
+}
+
+.para3 {
+    color: #061A89;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.arrow_vision {
+    height: 60px;
+    width: 60px;
+
+
+    transform: rotate(-45deg);
+
+}
+
+.our_head {
+    color: white;
+    padding: 10px;
+
+
+}
+
+.vsion_span {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.vsion_span2 {
+    color: blue;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.para4 {
+    color: #DF8B2D;
+    font-family: 'Roboto';
+
+}
+
+.para5 {
+    color: #0C69BE;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.para6 {
+    color: #50565C;
+    font-size: 20px;
+}
+
+.youtube_container {
+    display: flex;
+
+}
+
+.s {
+    width: 50vw;
+}
+
+.youtube {
+    height: 300px;
+    width: 50vw;
+    padding-left: 20px;
+}
+
+.youtube_head {
+    padding-top: 30px;
+    width: 50vw;
+}
+
+.main_card_container {
+    position: relative;
+    height: 350px;
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+
+}
+
+.the_card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+
+
+}
+
+.the_card:hover {
+    transform: rotateY(180deg);
+}
+
+.donate {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.the_front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #2A27BE;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.the_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #D0631C;
+    color: #333;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hands_image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.arrow {
+    height: 30px;
+    width: 60px;
+    align-self: flex-end;
+    transform: rotate(-45deg);
+    padding-right: 20px;
+}
+
+.arrow1 {
+    height: 30px;
+    width: 60px;
+    align-self: flex-end;
+    margin-top: 30px;
+    padding-right: 20px;
+}
+
+.support {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+}
+
+.supprt_para {
+    color: white;
+    text-align: center;
+}
+
+.cards_main_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Testimonials {
+    font-size: 25px;
+    color: #120F8A;
+    padding-top: 42px;
+}
+
+.what_they_said {
+    color: #120F8A;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.hcs {
+    font-size: 30px;
+    color: #102485;
+    font-weight: 600;
+
+}
+
+.fis_container {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.hcs_para {
+    font-size: 70px;
+    color: #102485;
+    font-weight: 700;
+}
+
+.hr_2 {
+    height: 3px;
+    background-color: #7C7BB1;
+}
+
+.double_quotes {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    color: #120F8A;
+}
+
+.double_quotes_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-line {
+    border-left: 2px solid #555486;
+    height: 400px;
+    padding: 10px;
+}
+
+.quotes_para {
+    font-size: 20px;
+    color: #6F6DCB;
+}
+
+.kris {
+    padding-top: 50px;
+    color: #1D1B73;
+}
+
+.kris_para {
+    color: #58578A;
+}
+
+.copy {
+    color: white;
+
+}
+
+.quick {
+    color: orange;
+    padding-bottom: 10px;
+}
+
+.lis {
+
+    text-align: start;
+    color: white;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+.social_links {
+    color: orange;
+    padding-bottom: 10px;
+
+}
+
+.main_list {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.facebook {
+    color: blue;
+    height: 30px;
+    width: 30px;
+}
+
+.facebook_title {
+    color: white;
+    padding-left: 15px;
+
+}
+
+.facebook_list {
+    display: flex;
+    padding: 10px;
+    padding-left: 0px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-image: radial-gradient(#323166, #1F1E60);
+
+
+}
+
+.image_swash {
+    height: 50px;
+    width: 130px;
+}
+
+.one {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.vision_container {
+    background-image: url('https://swasthalliance.org/images/vision.jpg');
+    height: 400px;
+    width: 50vw;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    margin-right: 0px;
+
+    margin-left: 0px;
+}
+
+.ar {
+    align-self: flex-end;
+}
+
+.vision_container2 {
+    background-image: url('https://www.anth.pk/wp-content/uploads/2019/03/operation-theatre.jpg');
+    height: 400px;
+    padding: 30px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.vision_main_container {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.s {
+    margin: 30px;
+}

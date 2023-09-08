@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle.js Example</title>
+    <!-- Include the Particle.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <div>
+
+        <div class='main_container'>
+            <div class='a'>
+                <nav class='nav_container'>
+                    <div class='swash_container'>
+                        <img class='image_swash' src='https://swasthalliance.org/images/logo.png' alt='swash' />
+
+                    </div>
+                    <ul class='list'>
+                        <li class='list_item1' id="text">HOME
+                            <svg xmlns="http://www.w3.org/2000/svg" class='v' fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </li>
+                        <li class='list_item' id="text4">ABOUT</li>
+                        <li class='list_item' id="text1">HCK</li>
+                        <li class='list_item1' id="text2">OTHER INITIATIVES
+                            <svg xmlns="http://www.w3.org/2000/svg" class='v' fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </li>
+                        <li class='list_item' id="text3">HOW WE WORK</li>
+
+                        <input type='search' class='input_element' />
+                        <svg xmlns="http://www.w3.org/2000/svg" class='search' fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class='bar_three' fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
+                            <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+
+                    </ul>
+
+
+
+                </nav>
+            </div>
+            <h1 class='head_creating'>Creating a digital
+                <br />backbone for integrated <br />healthcare delivery in India
+            </h1>
+            <div class='sdf'>
+                <div class='fis_container'>
+                    <h3 class='paraa'>The Swasth Alliance is a collaborative <br />
+                        that leverages digital technologies<br /> to drive health care inclusion and <br />
+                        improve health outcomes</h3>
+                </div>
+                <div class='first_container'>
+                    <div id="particles-js">
+
+                    </div>
+
+                    <script>
+                        // Configure the particle settings
+                        particlesJS("particles-js", {
+                            particles: {
+                                number: {
+                                    value: 300, // Number of particles
+                                    density: {
+                                        enable: true,
+                                        value_area: 800 // Area size for particles
+                                    }
+                                },
+                                color: {
+                                    value: "#1E6CD8" // Color of particles
+                                },
+                                shape: {
+                                    type: "circle" // Shape of particles
+                                },
+                                size: {
+                                    value: 6 // Size of particles
+                                },
+                                move: {
+                                    enable: true,
+                                    speed: 3 // Speed of particles
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class='container2'>
+            <h1 class='para2'>WE ARE HERE FOR A</h1>
+            <h1 class='para3'>REASON</h1>
+            <hr class='hr_2' />
+            <div class='vision_main_container'>
+                <div class='vision_container'>
+                    <div class='ar'>
+                        <img class="arrow_vision" src='https://swasthalliance.org/images/arrow.png' alt='hi' />
+                    </div>
+                    <div>
+
+                        <h2 class='our_head'>OUR
+                        </h2>
+                        <h1 class='vsion_span'>VISION</h1>
+                    </div>
+                </div>
+
+                <div class='vision_container2'>
+                    <div class='ar'>
+                        <img class="arrow_vision" src='https://swasthalliance.org/images/arrow.png' alt='hi' />
+                    </div>
+                    <div>
+                        <h2 class='our_head'>OUR
+                        </h2>
+                        <h1 class='vsion_span2'>MISSION</h1>
+                    </div>
+
+                </div>
+            </div>
+
+            <h1 class='hcs'>HCX INTEGRATOR</h1>
+            <h2 class='hcs_para'>WORKSHOP</h2>
+            <hr class='hr_2' />
+            <div class="youtube_container">
+
+                <div class='youtube_head'>
+                    <h1 class='para4'>Fire side chat on HCX
+                        <br />Integrator Workshop
+                    </h1>
+                    <br />
+                    <h2 class='para5'>by Kiran Anandampillai</h2>
+                    <br />
+                    <h3 class='para6'>CEO and Founder iDrishti,Advisor <br />(Technnology) at National Health Authority</h3>
+                </div>
+
+                <div>
+                    <iframe class='youtube' src="https://www.youtube.com/embed/Aq8XuRgyaQs?si=6RmcvldaI-DhxTcE" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+            </div>
+
+
+
+            <div class='cards_main_container'>
+                <div class='main_card_container'>
+                    <div class='the_card'>
+                        <div class='the_front'>
+
+                            <img class="arrow" src='https://swasthalliance.org/images/arrow.png' alt='hi' />
+                            <figure>
+                                <img class="hands_image" src="https://swasthalliance.org/images/donate-to-us-illustration.png" alt="g">
+                            </figure>
+                            <h1 class='donate'>Donate <br />to Us</h1>
+                        </div>
+                        <div class='the_back'>
+                            <h1 class='support'>Support Our Work</h1>
+                            <p class='supprt_para'>Learn about ways to donate us</p>
+                            <img class="arrow1" src='https://swasthalliance.org/images/arrow.png' alt='hi' />
+                        </div>
+                    </div>
+                </div>
+                <div class='main_card_container'>
+                    <div class='the_card'>
+                        <div class='the_front'>
+
+                            <img class="arrow" src='https://swasthalliance.org/images/arrow.png' alt='hi' />
+                            <figure>
+                                <img class="hands_image" src="https://swasthalliance.org/images/Asset.png" alt="g">
+                            </figure>
+                            <h1 class='donate'>Partner <br />with Us</h1>
+                        </div>
+                        <div class='the_back'>
+
+
+                            <h1 class='support'>Learn about how to become a Swasth shareholder member partner</h1>
+                            <img class="arrow1" src='https://swasthalliance.org/images/arrow.png' alt='hi' />
+
+                        </div>
+                    </div>
+                </div>
+                <div class='main_card_container'>
+                    <div class='the_card'>
+                        <div class='the_front'>
+
+                            <img class="arrow" src='https://swasthalliance.org/images/arrow.png' alt='hi' />
+                            <figure>
+                                <img class="hands_image" src="https://swasthalliance.org/images/volunteer-with-us-illustration.png" alt="g">
+                            </figure>
+                            <h1 class='donate'>Volunteer<br /> With Us</h1>
+                        </div>
+                        <div class='the_back'>
+
+
+                            <h1 class='support'>Explore ways to contribute to Swasth’s workstreams</h1>
+                            <img class="arrow1" src='https://swasthalliance.org/images/arrow.png' alt='hi' />
+
+                        </div>
+                    </div>
+                </div>
+                <div class='main_card_container'>
+                    <div class='the_card'>
+                        <div class='the_front'>
+
+                            <img class="arrow" src='https://swasthalliance.org/images/arrow.png' alt='hi' />
+                            <figure>
+                                <img class="hands_image" src="https://swasthalliance.org/images/join.png" alt="g">
+                            </figure>
+                            <h1 class='donate'>Join HCX <br /> Community</h1>
+                        </div>
+                        <div class='the_back'>
+
+
+                            <h1 class='support'>Explore ways to contribute to Swasth’s workstreams</h1>
+                            <img class="arrow1" src='https://swasthalliance.org/images/arrow.png' alt='hi' />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class='Testimonials'>
+                    TESTIMONIALS
+                </h2>
+                <h4 class='what_they_said'>WHAT THEY SAY</h4>
+                <hr class='hr_2' />
+            </div>
+
+            <div class='double_quotes_container'>
+                <div class='s'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class='double_quotes' fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
+                    </svg>
+                    <h4 class='quotes_para'>'Swasth emerged as an important pillar in the country's fight against COVID-19 and helped last-mile healthcare delivery at a time of great need. Currently, it is gradually and steadily expanding to be a key initiative that our healthcare system needs - a standard-based protocol and system for digital health claims exchange. It has been a pleasure guiding the team's tireless work towards democratising and digitising access to healthcare, and I'm excited for Swasth's journey of impactful growth.</h4>
+                    <h5 class='kris'>Kris Gopalakrishnan</h5>
+                    <h6 class='kris_para'>Board Chair</h6>
+                </div>
+                <div class="vertical-line"></div>
+                <div class='s'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class='double_quotes' fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
+                    </svg>
+                    <h4 class='quotes_para'>It has been a pleasure to work with the talented and deeply passionate team at the Swasth Alliance. Each wave of COVID-19 threw up entirely new challenges, with wave 2 testing the resilience of the entire nation. The team and volunteers at Swasth found the energy to work on a 24-hour cycle during that critical period to mount a large nationwide response, well beyond the point when the rest of us were entirely depleted. One of their core strengths is the spirit of collaboration, volunteering, and openness that they have in their DNA -- this is the "superpower" that allows them to do what they do so well. I am proud to be associated with them</h4>
+                    <h5 class='kris'>Nachiket Mor</h5>
+                    <h6 class='kris_para'>Board Member</h6>
+                </div>
+            </div>
+
+
+        </div>
+        <div class='footer'>
+            <div class='one'>
+
+                <img class='image_swash' src='https://swasthalliance.org/images/logo.png' alt='swash' />
+                <h6 class='copy'>Copyright@2023</h6>
+            </div>
+            <div class='two'>
+                <h3 class='quick'>Quick Links</h3>
+                <ul class='main_list'>
+                    <li class='lis'>Get Involved</li>
+                    <li class='lis'>Newsroom</li>
+                    <li class='lis'>Tech Blog</li>
+                    <li class='lis'></li>
+                </ul>
+
+            </div>
+
+            <div>
+                <h3 class='social_links'>Social Links</h3>
+                <ul class='main_list'>
+                    <li class='facebook_list'>
+                        <svg xmlns="http://www.w3.org/2000/svg" class='facebook' fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+
+                        </svg>
+                        <p class='facebook_title'>FACEBOOK</p>
+
+                    </li>
+                    <li class='facebook_list'><svg xmlns="http://www.w3.org/2000/svg" class='facebook' fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                        <p class='facebook_title'>TWITTER</p>
+                    </li>
+                    <li class='facebook_list'>
+                        <svg xmlns="http://www.w3.org/2000/svg" class='facebook' fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                        <p class='facebook_title'>LINKEDIN</p>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div>
+                <h2 class='social_links'>Contact Information</h2>
+                <p class='facebook_title'>No. 881, 6th Cross, Koramangala <br /> Club Road, 6th Block, Koramangala, <br />Bangalore, Karnataka-560095</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
